@@ -172,7 +172,7 @@ def is_overlapped(xpos, ypos, turn):
     for y_offset in range(현재블록.size):
         for x_offset in range(현재블록.size):
             if 0 <= xpos + x_offset < 가로 and \
-                    0 <= ypos + y_offset < 가로:
+                    0 <= ypos + y_offset < 세로:
                 if data[y_offset*현재블록.size + x_offset] != 0 and \
                     필드[ypos+y_offset][xpos+x_offset] != 0:
                     return True
@@ -189,10 +189,10 @@ go_next_block(INTERVAL)
 
 for ypos in range(세로):
     for xpos in range(가로):
-        필드[ypos][xpos] = 0 if xpos ==0 or xpos ==가로 -1 else 0
+        필드[ypos][xpos] = 8 if xpos ==0 or xpos ==가로 -1 else 0
 
 for index in range(가로):
-    필드[세로-1][index] =0
+    필드[세로-1][index] =8
 
 while True:
     키 = None
@@ -207,10 +207,10 @@ while True:
         count += 5
         if count % 1000 == 0:
             INTERVAL = max(1, INTERVAL-2)
-        erased = 블록.상태(count)
+        erased = 현재블록.상태(count)
 
         #키 동작
-        next_x, next_y, next_t = 블록.xpos, 블록.ypos, 블록.turn
+        next_x, next_y, next_t = 현재블록.xpos, 현재블록.ypos, 현재블록.turn
 
         if 키 == K_SPACE:
             next_t = (next_t +1) % 4
@@ -222,20 +222,20 @@ while True:
             next_y +=1
 
         if not is_overlapped(next_x, next_y, next_t):
-            현재블록_xpos = next_x
-            현재블록_ypos = next_y
-            현재블록_turn = next_t
-            현재블록_data = 현재블록.type(현재블록.turn)
+            현재블록.xpos = next_x
+            현재블록.ypos = next_y
+            현재블록.turn = next_t
+            현재블록.data = 현재블록.type[현재블록.turn]
 
 
-    화면.fill((0, 0, 0))
+    화면.fill( (0, 0, 0) )
     for ypos in range(세로):
         for xpos in range(가로):
             val = 필드[ypos][xpos]
             pygame.draw.rect(화면, 칼라[val],
                              (xpos*25 +25, ypos*25 +25, 24, 24))
 
-    블록.그리기()
+    현재블록.그리기()
 
     pygame.display.update()
     초당반응.tick(15)
