@@ -36,7 +36,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li style="font-size:20px;"><a href="#">공지사항</a></li>
-                    <li style="font-size:20px;"><a href="boardmenu.html">커뮤니티</a></li>
+                    <li style="font-size:20px;"><a href="#">커뮤니티</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리1</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리2</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리3</a></li>
@@ -52,8 +52,52 @@
     </nav>
     <!-- 상단메뉴 끝 -->
     <br><br><br><br><br><br><br>
-    <div class="container">
-      메인페이지
+    <div class="container"> <!-- 구분 짓기 태그 -->
+
+    <div align="right">
+      <a href="boardwrite2.html"><button class="btn btn-link">글쓰기</button></a>
     </div>
+
+    <table class="table table-hover">
+      <thead>
+          <tr>
+            <th>번호</th> <th>제목</th> <th> 이름</th> <th> 날짜</th> <th>조회수</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>1</td> <td>ㅎㅇ</td> <td>하영</td> <td>2021-02-23</td> <td>13</td>
+          </tr>
+          <tr>
+            <td>2</td> <td>하윙</td> <td>김하영</td> <td>2021-04-25</td> <td>30</td>
+          </tr>
+          <tr>
+            <td>3</td> <td>해윙</td> <td>하영님</td> <td>2021-03-27</td> <td>40</td>
+          </tr>
+          <tr>
+            <td>4</td> <td>하이</td> <td>뭐</td> <td>2021-09-01</td> <td>40</td>
+          </tr>
+      </tbody>
+    </table>
+
+    <table style="margin : 0 auto">
+        <tr>
+            <td>
+              <select class="form-control">
+                <option> 제목 </option>
+                <option> 이름 </option>
+                <option> 날짜 </option>
+            </select>
+            </td>
+            <td>
+                <input type="text" class="form-control" placeholder="검색어를 입력하세요.">
+            </td>
+            <td>
+                <input type="submit" value="검색" class="btn btn-link">
+            </td>
+        </tr>
+    </table>
+
+  </div>
 </body>
 </html>

@@ -36,7 +36,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li style="font-size:20px;"><a href="#">공지사항</a></li>
-                    <li style="font-size:20px;"><a href="boardmenu.html">커뮤니티</a></li>
+                    <li style="font-size:20px;"><a href="#">커뮤니티</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리1</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리2</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리3</a></li>
@@ -53,7 +53,34 @@
     <!-- 상단메뉴 끝 -->
     <br><br><br><br><br><br><br>
     <div class="container">
-      메인페이지
+      게시판
+      <a href="boardwrite.html"><button>글쓰기</button></a>
     </div>
+
+    <div class="container">
+      <form>
+    <table class="table">
+        <tr>
+          <td>제목</td>
+          <td> <input type="text" class="form-control" placeholder="제목을 입력해주세요"></td>
+        </tr>
+        <tr>
+            <td>내용</td>                                   <!-- style="resize:none;" : 크기변경불가 -->
+            <td> <textarea rows=10 class="form-control" style="resize:none;"></textarea></td>
+        </tr>
+        <tr>
+            <td>첨부파일1</td>
+            <td> <input type="file" class="form-control"></td>
+        </tr>
+        <tr> 공개범위</tr>
+    </table>
+    <div align="right">
+        <input type="submit" value="등록하기" class="btn-info">
+        <input type="reset" value="다시쓰기" class="btn-info">
+    </div>
+    </form>
+    <a href="1.부트스트랩.html"><button class="btn btn-info">목록보기</button></a>
+  </div>
+
 </body>
 </html>
