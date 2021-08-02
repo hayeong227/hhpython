@@ -35,8 +35,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li style="font-size:20px;"><a href="#">공지사항</a></li>
-                    <li style="font-size:20px;"><a href="#">커뮤니티</a></li>
+                    <li style="font-size:20px;"><a href="공지.html">공지사항</a></li>
+                    <li style="font-size:20px;"><a href="boardmenu.html">커뮤니티</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리1</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리2</a></li>
                     <li style="font-size:20px;"><a href="#">사진갤러리3</a></li>
@@ -53,11 +53,6 @@
     <!-- 상단메뉴 끝 -->
     <br><br><br><br><br><br><br>
     <div class="container">
-      게시판
-      <a href="boardwrite.html"><button>글쓰기</button></a>
-    </div>
-
-    <div class="container">
       <form>
     <table class="table">
         <tr>
@@ -69,17 +64,23 @@
             <td> <textarea rows=10 class="form-control" style="resize:none;"></textarea></td>
         </tr>
         <tr>
-            <td>첨부파일1</td>
+            <td>첨부파일</td>
             <td> <input type="file" class="form-control"></td>
         </tr>
-        <tr> 공개범위</tr>
+        <tr>
+            <td>공개범위</td>
+            <td><input type="radio" name="email" > 전체공개
+                <input type="radio" name="email"> 친구만
+                <input type="radio" name="email"> 나만보기 </td>
+        </tr>
+
     </table>
     <div align="right">
-        <input type="submit" value="등록하기" class="btn-info">
-        <input type="reset" value="다시쓰기" class="btn-info">
+        <input type="submit" value="등록하기" class="btn btn-primary">
+        <input type="reset" value="다시쓰기" class="btn btn-primary">
     </div>
     </form>
-    <a href="1.부트스트랩.html"><button class="btn btn-info">목록보기</button></a>
+    <a href="boardmenu.html"><button class="btn btn-primary">목록보기</button></a>
   </div>
 
 </body>
