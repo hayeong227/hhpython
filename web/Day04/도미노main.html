@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <style>
+        @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+    *{ font-family: 'GmarketSansMedium'; }
+
+    /*캐러셀 버튼의 그라데이션 없애기*/
+    .carousel-control{ background : none !important; }
+
+    </style>
+
+</head>
+<body>
+
+  <div align="center">
+      <img src="도미노피자.png" width="100px;">
+ </div>
+
+  <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+      </ul>
+  </div>
+
+  <nav class="navbar navbar-inverse">
+      <div class="container">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">toggle</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">피자</a></li>
+                <li><a href="#">피자라이스볼</a></li>
+                <li><a href="#">하프앤하프</a></li>
+                <li><a href="#">사이드디시</a></li>
+            </ul>
+      </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slie-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slie-to="1"></li>
+          <li data-target="#myCarousel" data-slie-to="2"></li>
+          <li data-target="#myCarousel" data-slie-to="3"></li>
+          <li data-target="#myCarousel" data-slie-to="4"></li>
+          <li data-target="#myCarousel" data-slie-to="4"></li>
+      </ol>
+
+    <div class="carousel-inner">
+            <div class="item active">
+                <img src="도미노1.png" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="도미노2.png" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="도미노3.png" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="도미노4.png" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="도미노5.png" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="도미노6.png" class="img-responsive center-block">
+            </div>
+            <div class="item">
+                <img src="도미노7.png" class="img-responsive center-block">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+  </div>
+
+  <div class="container">
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#피자">피자</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#피자라이스볼">피자 라이스볼</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#하프앤하프">하프앤하프</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#사이드디시">사이드디시</a>
+          </li>
+      </ul>
+
+       <div class="tab-content">
+          <div class="tab-pane fade" id="피자">
+              <div> 피자 메뉴 목록 </div><br><br>
+          <table>
+              <tbody>
+                  <tr>
+                      <td><img src="블록버스터4.jpg" width="300px;"></td>
+                      <td><img src="스셰시.jpg" width="300px;"></td>
+                      <td><img src="글레4.jpg" width="300px;"></td>
+                  </tr>
+                  <tr style="font-size:20px; text-align:center">
+                      <td>블록버스터4</td>
+                      <td>스타 셰프 시그니처</td>
+                      <td>글로벌 레전드4</td>
+                  </tr>
+                  <tr style="font-size:10px; text-align:center">
+                      <td>#4개 도시의 프리미엄 요리를 품은 블록버스터급 콰트로 피자!<br>
+#트리플 치즈 버스트 엣지 L 주문 시, 배달25% 포장35% 할인(결제 시 할인 선택)</td>
+                      <td>#드라이에이징 스테이크와 트러플 크림 소스의 조화!<br>
+#트리플 치즈 버스트 엣지 L 주문 시, 배달25% 포장35% 할인(결제 시 할인 선택)</td>
+                      <td>#한국,미국,호주,프랑스! 레전드의 만남<br>
+#트리플 치즈 버스트 엣지 L 주문 시, 배달25% 포장35% 할인(결제 시 할인 선택)</td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+
+            <div class="tab-content">
+          <div class="tab-pane fade" id="피자라이스볼">
+              <div> 피자라이스볼 메뉴 목록 </div><br><br>
+           <table>
+              <tbody>
+                  <tr>
+                      <td><img src="블랙타이거.jpg" width="300px;"></td>
+                      <td><img src="블랙앵거스.jpg" width="300px;"></td>
+                      <td><img src="뉴욕오리진.jpg" width="300px;"></td>
+                  </tr>
+                  <tr style="font-size:20px; text-align:center">
+                      <td>블랙타이거 슈림프 피자 라이스볼 (Bowl)</td>
+                      <td>블랙앵거스 스테이크 피자 라이스볼 (Bowl)</td>
+                      <td>뉴욕 오리진 피자 라이스볼 (Bowl)</td>
+                  </tr>
+                  <tr style="font-size:10px; text-align:center">
+                      <td>#블랙타이거 슈림프 피자의 레시피가 담긴 라이스볼<br>
+#1인~4인까지 즐기는 할인 혜택!</td>
+                      <td>#블랙앵거스 스테이크 피자의 레시피가 담긴 라이스볼<br>
+#1인~4인까지 즐기는 할인 혜택!</td>
+                      <td>#뉴욕 오리진 피자의 레시피가 담긴 라이스볼<br>
+#1인~4인까지 즐기는 할인 혜택!</td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+
+      <div class="tab-pane fade" id="하프앤하프">
+              <div>하프앤하프 메뉴 목록</div>
+          </div>
+          <div class="tab-pane fade" id="사이드디시">
+              <div>사이드디시 메뉴 목록</div>
+          </div>
+
+      <br><br><br><br><br>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
